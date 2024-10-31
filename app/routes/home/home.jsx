@@ -1,15 +1,15 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
+import gamestackTexture2Large from '~/assets/fitaboMobile.png';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
+import gamestackTexture2 from '~/assets/fitaboMobile.png';
+import gamestackTextureLarge from '~/assets/fitabo.png';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
+import gamestackTexture from '~/assets/fitabo.png';
+import sliceTextureLarge from '~/assets/bafredo.png';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sliceTexture from '~/assets/bafredo.png';
+import sprTextureLarge from '~/assets/fitaboHome.png';
+import sprTexturePlaceholder from '~/assets/fitaboHome.png';
+import sprTexture from '~/assets/fitaboHome.png';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -103,10 +103,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="We're Fitabo"
+        description="Online platform For Booking Fitness service Providers. Personal Trainers, Gyms and wellness providers"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="http://wearefitabo.com/"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Fitabo Progressive Web App"
+        description="Your Mobile Fitness App. For Tracking Your Fitness Goals And Automatic Generated Fitness Routines to fit your needs"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="http://wearefitabo.com/"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -148,13 +148,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Bafredo Electronic"
+        description="An online one stop shop for electronics components, boards & gadgets"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://bafredo.co.tz/"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Bafredo Electronics',
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
