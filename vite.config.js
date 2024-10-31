@@ -34,6 +34,7 @@ export default defineConfig({
           route('/', 'routes/home/route.js', { index: true });
         });
       },
+      ssr: false,
     }),
     jsconfigPaths(),
   ],

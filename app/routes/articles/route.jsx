@@ -1,5 +1,5 @@
 import { json } from '@remix-run/cloudflare';
-import { Outlet, useLoaderData } from '@remix-run/react';
+import { Outlet } from '@remix-run/react';
 import { MDXProvider } from '@mdx-js/react';
 import { Post, postMarkdown } from '~/layouts/post';
 import { baseMeta } from '~/utils/meta';
@@ -26,11 +26,9 @@ export function meta({ data }) {
 }
 
 export default function Articles() {
-  const { frontmatter, timecode } = useLoaderData();
-
   return (
     <MDXProvider components={postMarkdown}>
-      <Post {...frontmatter} timecode={timecode}>
+      <Post >
         <Outlet />
       </Post>
     </MDXProvider>
