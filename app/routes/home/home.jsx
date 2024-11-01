@@ -19,25 +19,25 @@ import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
 
-// Prefetch draco decoader wasm
-export const links = () => {
-  return [
-    {
-      rel: 'prefetch',
-      href: '/draco/draco_wasm_wrapper.js',
-      as: 'script',
-      type: 'text/javascript',
-      importance: 'low',
-    },
-    {
-      rel: 'prefetch',
-      href: '/draco/draco_decoder.wasm',
-      as: 'fetch',
-      type: 'application/wasm',
-      importance: 'low',
-    },
-  ];
-};
+// // Prefetch draco decoader wasm
+// export const links = () => {
+//   return [
+//     {
+//       rel: 'prefetch',
+//       href: '/draco/draco_wasm_wrapper.js',
+//       as: 'script',
+//       type: 'text/javascript',
+//       importance: 'low',
+//     },
+//     {
+//       rel: 'prefetch',
+//       href: '/draco/draco_decoder.wasm',
+//       as: 'fetch',
+//       type: 'application/wasm',
+//       importance: 'low',
+//     },
+//   ];
+// };
 
 export const meta = () => {
   return baseMeta({
