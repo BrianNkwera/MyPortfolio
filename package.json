@@ -11,7 +11,7 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
+    "deploy": "npm run build && gh-pages -d build/client",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
@@ -52,6 +52,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.8.0",
+    "gh-pages": "^6.2.0",
     "node-fetch": "^3.3.2",
     "postcss": "^8.4.33",
     "postcss-custom-media": "^10.0.2",
