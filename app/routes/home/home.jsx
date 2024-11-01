@@ -10,6 +10,7 @@ import sliceTexture from '~/assets/bafredo.png';
 import sprTextureLarge from '~/assets/fitaboHome.png';
 import sprTexturePlaceholder from '~/assets/fitaboHome.png';
 import sprTexture from '~/assets/fitaboHome.png';
+import jitangaze from '~/assets/Jitangaze.png'
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -158,6 +159,26 @@ export const Home = () => {
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={4}
+        title="Jitangaze"
+        description="Ad-Classified Selling And Buying center connecting local buyers and sellers"
+        buttonText="View project"
+        buttonLink="https://jitangaze.co.tz/"
+        model={{
+          type: 'laptop',
+          alt: 'Jitangaze.co.tz',
+          textures: [
+            {
+              srcSet: `${jitangaze} 800w, ${jitangaze} 1920w`,
               placeholder: sliceTexturePlaceholder,
             },
           ],
