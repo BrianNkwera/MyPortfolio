@@ -1,4 +1,4 @@
-import{r,j as y}from"./jsx-runtime-BfF-YriY.js";import{u as R,f as L,g as M,T as C}from"./image-D0V8Py5W.js";import{m as z}from"./style-DceWDdse.js";import{u as E}from"./useWindowSize-CCgmKmhO.js";import{l as I,W as j,L as q,f as D,S as A,N as G,U as F,X as T,M as U,c as V,a as k,D as H,y as N,r as W}from"./three-D2cv32zP.js";import{t as X}from"./throttle-BgiUmwhn.js";import{u as P}from"./use-spring-DxnKqeE8.js";import"./components-Dn-xNZAJ.js";import"./index-Wip2jntP.js";const B=`#define PHONG\r
+import{r,j as y}from"./jsx-runtime-BfF-YriY.js";import{u as R,f as L,g as M,T as C}from"./image-D0V8Py5W.js";import{m as z}from"./style-DceWDdse.js";import{u as E}from"./useWindowSize-CCgmKmhO.js";import{l as I,W as j,L as q,f as D,S as A,N as G,U as F,X as T,M as U,c as V,a as k,D as H,y as N,r as W}from"./three-D6gM9OOn.js";import{t as X}from"./throttle-BgiUmwhn.js";import{u as P}from"./use-spring-DxnKqeE8.js";import"./components-Dn-xNZAJ.js";import"./index-Wip2jntP.js";const B=`#define PHONG\r
 \r
 uniform vec3 diffuse;\r
 uniform vec3 emissive;\r
