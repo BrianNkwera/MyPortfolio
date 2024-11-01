@@ -14,6 +14,7 @@ import rehypePrism from '@mapbox/rehype-prism';
 const isStorybook = process.argv[1]?.includes('storybook');
 
 export default defineConfig({
+  base: '/MyPortfolio/',
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
@@ -29,6 +30,7 @@ export default defineConfig({
     }),
     remixCloudflareDevProxy(),
     remix({
+      basename: '/MyPortfolio/',
       routes(defineRoutes) {
         return defineRoutes(route => {
           route('/', 'routes/home/route.js', { index: true });

@@ -65,6 +65,7 @@ export default function App() {
           name="color-scheme"
           content={theme === 'light' ? 'light dark' : 'dark light'}
         />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
         <Meta />
         <Links />
