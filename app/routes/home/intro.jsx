@@ -63,6 +63,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
       <Transition in key={theme} timeout={3000}>
         {({ visible, status }) => (
           <>
+            {console.log(isHydrated)}
             {isHydrated && (
               <Suspense>
                 <DisplacementSphere />
