@@ -1,6 +1,5 @@
 import {
   vitePlugin as remix,
-  cloudflareDevProxyVitePlugin as remixCloudflareDevProxy,
 } from '@remix-run/dev';
 import { defineConfig } from 'vite';
 import jsconfigPaths from 'vite-jsconfig-paths';
@@ -11,7 +10,6 @@ import rehypeImgSize from 'rehype-img-size';
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
 
-const isStorybook = process.argv[1]?.includes('storybook');
 
 export default defineConfig({
    base: '/',
@@ -28,7 +26,6 @@ export default defineConfig({
       remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
       providerImportSource: '@mdx-js/react',
     }),
-    remixCloudflareDevProxy(),
     remix({
        basename: '/',
       routes(defineRoutes) {

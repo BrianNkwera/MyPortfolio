@@ -60,7 +60,7 @@
     "remark-mdx-frontmatter": "^4.0.0",
     "storybook": "^7.6.17",
     "vite": "^5.1.0",
-    "vite-jsconfig-paths": "^2.0.1",
+    "vite-jsconfig-paths": "^2.0.1"
   },
   "engines": {
     "node": ">=19.9.0"
