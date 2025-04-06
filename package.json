@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "node ./scripts/dev.cjs && remix vite:dev",
+    "dev": "node ./scripts/dev.cjs && remix vite:dev --host",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
     "deploy": "npm run build && gh-pages -d build/client",
