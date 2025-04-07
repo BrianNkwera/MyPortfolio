@@ -20,6 +20,9 @@ export default defineConfig({
   server: {
     port: 7777,
   },
+  optimizeDeps: {
+    include: ['linked-dep'],
+  },
   plugins: [
     mdx({
       rehypePlugins: [[rehypeImgSize, { dir: 'public' }], rehypeSlug, rehypePrism],
@@ -33,7 +36,6 @@ export default defineConfig({
           route('/', 'routes/home/route.js', { index: true });
         });
       },
-      ssr: false,
     }),
     jsconfigPaths(),
   ],

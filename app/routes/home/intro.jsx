@@ -25,7 +25,6 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const introLabel = [disciplines.slice(0, -1).join(', '), disciplines.slice(-1)[0]].join(
     ', and '
   );
-  const currentDiscipline = disciplines.find((item, index) => index === disciplineIndex);
   const titleId = `${id}-title`;
   const scrollToHash = useScrollToHash();
   const isHydrated = useHydrated();
@@ -86,28 +85,16 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>
-                <div className={styles.row}>
-                  {disciplines.map(item => (
-                    <Transition
-                      unmount
-                      in={item === currentDiscipline}
-                      timeout={{ enter: 3000, exit: 2000 }}
-                      key={item}
-                    >
-                      {({ status, nodeRef }) => (
-                        <span
-                          aria-hidden
-                          ref={nodeRef}
-                          className={styles.word}
-                          data-plus={true}
-                          data-status={status}
-                          style={cssProps({ delay: tokens.base.durationL })}
-                        >
-                          {item}
-                        </span>
-                      )}
-                    </Transition>
-                  ))}
+                <div>
+                  <span
+                    aria-hidden
+                    className={styles.word}
+                    data-plus={true}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationL }, {backgroundColor: '#f4816d'})}
+                  >
+                    Engineer
+                  </span>
                 </div>
               </Heading>
             </header>
