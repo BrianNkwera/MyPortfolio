@@ -17,6 +17,10 @@ const DisplacementSphere = lazy(() =>
   import('./displacement-sphere').then(module => ({ default: module.DisplacementSphere }))
 );
 
+const TechSphereAnimation = lazy(() =>
+  import('./technologies-globe').then(module => ({ default: module.TechSphereAnimation }))
+);
+
 export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const { theme } = useTheme();
   const { disciplines } = config;
@@ -64,7 +68,14 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
           <>
             {isHydrated && (
               <Suspense>
-                <DisplacementSphere />
+                {/* <DisplacementSphere /> */}
+
+                <TechSphereAnimation
+                  // style={{
+                  //   width: '50%', // Adjust width as needed
+                  //   right: '-5%', // Partially extend beyond screen edge
+                  // }}
+                />
               </Suspense>
             )}
             <header className={styles.text}>
@@ -91,7 +102,10 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     className={styles.word}
                     data-plus={true}
                     data-status={status}
-                    style={cssProps({ delay: tokens.base.durationL }, {backgroundColor: '#f4816d'})}
+                    style={cssProps(
+                      { delay: tokens.base.durationL },
+                      { backgroundColor: '#f4816d' }
+                    )}
                   >
                     Engineer
                   </span>

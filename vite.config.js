@@ -12,10 +12,10 @@ import rehypePrism from '@mapbox/rehype-prism';
 
 
 export default defineConfig({
-   base: '/',
+  //  base: '/',
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
-    assetsInlineLimit: 1024,
+    assetsInlineLimit: 0,
   },
   server: {
     port: 7777,
@@ -30,7 +30,7 @@ export default defineConfig({
       providerImportSource: '@mdx-js/react',
     }),
     remix({
-       basename: '/',
+      //  basename: '/',
       routes(defineRoutes) {
         return defineRoutes(route => {
           route('/', 'routes/home/route.js', { index: true });

@@ -1,16 +1,10 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
-
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
 
-Hamish Williams
+Brian Nkwera
 Hand crafted design & web development
 
 Design tools:
@@ -18,12 +12,12 @@ Figma
 Photoshop
 Blender
 
-twitter.com/hamishmw
-github.com/hamishmw
+twitter.com/briannkwera
+github.com/briannkwera
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGY |クノロジー
 
 React
 Remix

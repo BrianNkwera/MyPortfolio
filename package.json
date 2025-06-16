@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "node ./scripts/dev.cjs && remix vite:dev --host",
+    "dev": "remix vite:dev --host",
     "start": "remix-serve ./build/server/index.js",
     "postinstall": "node ./scripts/draco.cjs",
     "deploy": "npm run build && gh-pages -d build/client",
