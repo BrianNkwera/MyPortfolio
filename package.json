@@ -9,8 +9,7 @@
   "scripts": {
     "build": "remix vite:build",
     "dev": "remix vite:dev --host",
-    "start_og": "remix-serve ./build/server/index.js",
-    "start": "wrangler pages dev ./build/client",
+    "start": "remix-serve ./build/server/index.js",
     "postinstall": "node ./scripts/draco.cjs",
     "deploy": "npm run build && gh-pages -d build/client",
     "dev:storybook": "storybook dev -p 6006",
