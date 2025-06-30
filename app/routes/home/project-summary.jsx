@@ -64,7 +64,7 @@ export function ProjectSummary({
 
   function renderDetails(visible) {
     return (
-      <div className={styles.details}>
+      <div className={styles.details} style={{marginLeft: alternate && !isMobile ? '70px' : '0px'}}>
         <div aria-hidden className={styles.index}>
           <Divider
             notchWidth="64px"

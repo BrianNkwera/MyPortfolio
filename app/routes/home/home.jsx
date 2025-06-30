@@ -169,6 +169,7 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={4}
+        alternate={true}
         title="Jitangaze"
         description="Ad-Classified Selling And Buying center connecting local buyers and sellers"
         buttonText="View project"
